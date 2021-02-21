@@ -1,0 +1,118 @@
+.outContainerNav{
+    background-color: #37517e;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+}
+.navHead{
+    color: rgb(27, 26, 26);
+    font: 40px "Jost", sans-serif;
+    font-size: 2.5rem;
+    margin: 0px 0px 8px;
+    
+    font-weight: 500;
+    
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(./download.png); 
+}
+.nav-menu > ul {
+    display: flex;
+}
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+}
+.get-started-btn {
+    color: #fff;
+    border-radius: 50px;
+    padding: 6px 25px 7px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
+}
+.get-started-btn:hover {
+    background: #47b2e4;
+}
+
+
+@media only screen and (max-width:768px){
+    .get-started-btn{
+        margin: 0;
+    }
+    .navHead{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width:768px){
+    .iconToggle{
+        display: none;
+    }
+}
+/*gvdea,*/
+
+.navbar-toggler {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #4099b100;
+    border-color: #ffffff00;
+
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #4099b100;
+    border-color: #ffffff00;
+
+}
+.show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #4099b100;
+    border-color: #ffffff00;
+}
+.btn-secondary.focus, .btn-secondary:focus {
+    color: #fff;
+    background-color: #4099b100;
+    border-color: #ffffff00;
+    box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
+}
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0rem rgba(130,138,145,.5);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(26 23 23 / 50%);
+}

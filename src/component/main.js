@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import About from './About/About';
+import Header from './Header/Header';
+import { BrowserRouter as Router} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 
 export default class MainPage extends Component{
     render(){
         return(
-            <React.Fragment>
-                
-            </React.Fragment>
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={Header} />
+                    <Route path="/home" component={Header} />
+                </Switch>
+            </Router>
         )
     }
 }
