@@ -16,6 +16,20 @@ export default class Login extends Component {
     login(){
         console.log(this.state)
     }
+    handleChange = (e) =>
+    this.setState({
+        [e.target.name] : e.target.value
+    })
+
+    handleSubmit=(e)=>{
+        e.preventDefault();
+        this.setState({
+            name:'',
+            password:'' 
+        })
+        this.props.history.push('/home')
+    }
+
 
     render() {
         return (
@@ -25,13 +39,29 @@ export default class Login extends Component {
                         <div className="grad">
                             <div className="container logmain">
                                 <div className="logbox">
-                                    <label><b>Username</b></label>
-                                    <input type="text" name="user" onChange={(e)=>this.setState({name:e.target.value})} 
-                                        placeholder="Username" required/><br/><br/>
-                                    <label><b>Password</b></label>
-                                    <input type="password" name="password" onChange={(e)=>this.setState({password:e.target.value})} 
-                                        placeholder="Password" required/><br/><br/>
-                                    <Link to="/home"><button onClick={()=>{this.login()}} className="btn btn-primary"> Login</button></Link>
+                                <form onSubmit={this.handleSubmit}> 
+                                    <FormGroup className="col-md-12">
+                                        <Row>
+                                        <Label htmlFor ="name"><b>Username</b></Label> 
+                                            <Input type="text" id="name" name="name" 
+                                                onChange = {this.handleChange}
+                                                placeholder="Username" required />
+                                        </Row>
+                                    </FormGroup>
+                                    <FormGroup className="col-md-12">
+                                        <Row>
+                                        <Label htmlFor ="password"><b>Password</b></Label>
+                                            <Input type="password" id="password" name="password" value ={this.state.password} onChange = {this.handleChange}
+                                                placeholder="Enter Password" required/>
+                                        </Row>
+                                    </FormGroup> 
+                                    <br/>
+                                    <FormGroup row>
+                                        <Col>
+                                            <input type="submit" className="btn btn-primary" value="login"></input>
+                                        </Col>
+                                    </FormGroup>
+                                </form>
                                 </div>
                             </div>
                         </div>
