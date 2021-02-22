@@ -1,10 +1,40 @@
+.cont{
+    display: flex;
+    width: 100vw;
+}
+.getstart{
+    display: flex;
+    flex-direction: column;
+    color: #4A4A4A;
+    background-color: white;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 20px;
+}
+.send, .regi{
+    width: fit-content;
+    padding: 10px 20px;
+     background-color: #29D8DB;
+     border: none;
+     color: white;
+     border-radius: 10px;
+
+}
+.getstart h3{
+    color: black;
+    margin: 0;
+    font-weight: bold;
+}
 .imgH{
     background-image: url('./laptop-body.jpg');
     background-repeat: no-repeat;
     background-position-x: right;
     background-size: 100% 100%;
+    display: flex;
+    width: 100%;
 
 }
+
 .grad{
     background-color: transparent;
     background-image: linear-gradient(-90deg,#29d8db 30%,#01578c -70%);
@@ -12,15 +42,24 @@
     transition: background .3s,border-radius .3s,opacity .3s;
     width: 100%;
     height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .homemain{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+.homemain hr{
+    width: 80px;
 }
 .hclass{
     font-family: 'Montserrat',sans-serif;
     font-weight: 800;
     color: #fff;
+    margin: 0;
     font-size: 1.25rem;
     text-align: justify;
 }
@@ -36,9 +75,9 @@
     display: flex;
     flex-direction: column;
 
-    justify-items: center;
-    margin-left: 15px;
-    margin-top: 15px;
+    /* justify-items: center; */
+    /* margin-left: 15px;
+    margin-top: 15px; */
 }
 
 @media only screen and (max-width:768px){
