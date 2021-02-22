@@ -32,7 +32,7 @@
     background-image: url('./laptop-body.jpg');
     background-repeat: no-repeat;
     background-position-x: right;
-    background-size: 100% 100%;
+    background-size: 100%;
     display: flex;
     width: 100%;
 
@@ -44,17 +44,25 @@
     opacity: .85;
     transition: background .3s,border-radius .3s,opacity .3s;
     width: 100%;
-    height: 91vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .homemain{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     /* width: 80%; */
+}
+.logmain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 80%; */
+    height: 88vh;
 }
 .homemain hr{
     width: 80px;
@@ -89,10 +97,9 @@
     justify-content: center;
     align-items: center;
     width: 40%;
-    
     background-color: #fff;
     height: fit-content;
-    padding: 50px;
+    padding: 90px;
     border-radius: 15px;
 }
 
@@ -105,12 +112,13 @@
 }
 .card1, .card2, .card3{
     display: flex;
-    width: 15vw;
+    width: 20vw;
     padding: 30px;
     background-color: white;
     border-radius: 10px;
     flex-direction: column;
     text-align: center;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 12%);
 }
 .card1 p{
     color: gray;
@@ -164,7 +172,7 @@
 .hpcard1{
     background-color: #27c3cf;
     color: black;
-    width: 15vw;
+    width: 25vw;
     padding: 20px;
     font-size: 16px;
     border-radius: 10px 10px 10px 50px;
@@ -174,9 +182,14 @@
     display: flex;
     flex-direction: row;
     width: 80%;
-    justify-content: space-evenly
-
+    justify-content: space-evenly;
+    margin-bottom: 10px;
 }
+.userPass{
+    justify-content: start;
+    
+}
+
 @media only screen and (max-width:768px){
     .grad{
         background-image: linear-gradient(-90deg,#29d8db 0%,#01578c -100%);
@@ -187,5 +200,57 @@
         padding-right: 2px;
         padding-bottom: 50px;
         width: 100%;
+    }
+    .homemain{
+        flex-direction: column;
+
+    }
+    .getstart{
+        margin-top: 6px;
+    }
+    .cards{
+        flex-direction: column;
+        width: 90%;
+
+    }
+    .card1, .card2, .card3{
+        width: fit-content;
+        margin-bottom: 5px;
+    }
+    .imgSucc{
+        width: 100%
+    }
+    .def h1 {
+        font-weight: bold;
+        font-size: 33px;
+    }
+    .def{
+        width: 90%;
+    }
+    .registerdiv h3{
+        font-size: 25px;
+        
+    }
+    .registerdiv{
+        flex-direction: column;
+    }
+    .register{
+        padding: 6px 16px;
+    }
+    .hpcards{
+        flex-direction: column;
+    }
+    .hpcard1{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .imgH{
+        background-size: 100% 100%;
+    }
+    .hclass{
+        text-align: center;
+    }
+    .hmain{
+        font-weight: 750;
     }
 }

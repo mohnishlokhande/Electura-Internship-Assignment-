@@ -10,9 +10,9 @@ export default class HomePg extends Component {
             <div className="cont">
                 <div className="imgH">
                     <div className="grad">
+                        <br/><br/>
                         <div className="container homemain">
                             <div className="headmain">
-
                                 <h4 className="hclass">Your Learning Journey Matters to Us</h4>
                                 <hr />
                                 <h1 className="hmain">Future <br />achievers <br />study from <br />IITians Online</h1>
@@ -36,6 +36,7 @@ export default class HomePg extends Component {
                             </div>
                         </div>
                         <br/>
+                        <br/>
                         <div className="cards">
                             <div className="card1">
                                 <h1>Online Live Classes</h1>
@@ -54,14 +55,14 @@ export default class HomePg extends Component {
                     </div>
                 </div>
 
-
+                <br/><br/>
                 <div className="def">
                     <p>
                         Electura lays a path of realizable and practical knowledge for young minds, by acting as a rendezvous between them and high academic achievers, through technology.
                     </p>
                     <br />
                     <h1>The Path to Success</h1>
-                    <img src={path} alt="path" />
+                    <img src={path} alt="path" className="imgSucc"/>
                     <div className="registerdiv">
                         <h3>
                             Register for a webinar with an IITian Expert
@@ -69,9 +70,10 @@ export default class HomePg extends Component {
                         <button type="button" class="register">REGISTER</button>
 
                     </div>
-
+                    <br/><hr/>
                     <h2>Happy Students, Happy Parents!</h2>
-                    <hr style={{ width: "50px", color: "black" }} />
+                    
+                    <p>______________</p><br/>
                 </div>
                 <div className="hpcards">
                     <div className="hpcard1">
@@ -89,9 +91,9 @@ export default class HomePg extends Component {
                         <br />
                         <p>Harsh Tutor</p>
                     </div>
-
+                    
                 </div>
-
+                
             </div>
         )
     }
