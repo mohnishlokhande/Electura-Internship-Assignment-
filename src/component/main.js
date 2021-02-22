@@ -10,8 +10,8 @@ export default class MainPage extends Component{
     render(){
         return(
             <Router>
-                <Switch>
-                    <Route exact path="/" component={Header} />
+                <Header/>
+                <Switch>   
                     <Route path="/home" component={HomePg} />
                     <Route path="/login" component={Login} />
                 </Switch>
