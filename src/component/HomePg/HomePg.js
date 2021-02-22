@@ -16,9 +16,6 @@ export default class HomePg extends Component {
                                 <h4 className="hclass">Your Learning Journey Matters to Us</h4>
                                 <hr />
                                 <h1 className="hmain">Future <br />achievers <br />study from <br />IITians Online</h1>
-                                {/* <button class="btn btn-info">
-                                    <Link to="/map" className="" >Register For Free </Link>                    
-                                </button>   */}
                                 <br />
                                 <button type="button" class="regi">Register For Free</button>
                             </div>
@@ -36,9 +33,7 @@ export default class HomePg extends Component {
                                  <input type="text" />
                                  <br />
                                  <button className="send" type="submit">Send</button>
-                               
                             </div>
-
                         </div>
                     </div>
                 </div>

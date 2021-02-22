@@ -78,9 +78,9 @@ export default class Header extends Component {
                             </Nav>
                             <Nav className="logout" navbar>
                                 <NavLink className="nav-link" to="/">
-                                    <button type="button" className="btn btn-primaryget-started-btn"  
-                                            
-                                            ><span className="fa fa-sign-out aa fa-lg"/> Login/Sign up</button> 
+                                    <button type="button" className="btn btn-primary get-started-btn">
+                                        <span className="fa fa-sign-in aa fa-lg"/> Login
+                                    </button> 
                                 </NavLink>
                             </Nav>
                         </Collapse>
