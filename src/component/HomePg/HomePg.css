@@ -79,9 +79,27 @@
     /* margin-left: 15px;
     margin-top: 15px; */
 }
-
+.logbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    
+    background-color: #fff;
+    height: fit-content;
+    padding: 50px;
+    border-radius: 15px;
+}
 @media only screen and (max-width:768px){
     .grad{
         background-image: linear-gradient(-90deg,#29d8db 0%,#01578c -100%);
+    }
+    .logbox{
+        padding-top: 50px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 50px;
+        width: 100%;
     }
 }

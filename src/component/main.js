@@ -12,10 +12,10 @@ export default class MainPage extends Component{
             <Router>
                 <Switch>
                     <Route exact path="/" component={Header} />
-                    <Route path="/home" component={Header} />
+                    <Route path="/home" component={HomePg} />
                     <Route path="/login" component={Login} />
                 </Switch>
-                <HomePg/>
+                
             </Router>
         )
     }
