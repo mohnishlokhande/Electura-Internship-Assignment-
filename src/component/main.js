@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePg from './HomePg/HomePg';
 import Login from './Login/Login';
 import Other from './Other/Other';
+import Footer from './Footer/Footer';
 
 
 export default class MainPage extends Component{
@@ -18,7 +19,7 @@ export default class MainPage extends Component{
                     <Route path="/login" component={Login} />
                     <Route path="/other" component={Other} />
                 </Switch>
-                
+                <Footer/>
             </Router>
         )
     }
