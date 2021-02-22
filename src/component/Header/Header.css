@@ -1,9 +1,10 @@
 .outContainerNav{
-    background-color: #37517e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     transition: all 0.5s;
     z-index: 997;
-    padding: 15px 0;
 }
 .navHead{
     color: rgb(27, 26, 26);
@@ -13,6 +14,12 @@
     
     font-weight: 500;
     
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar-dark .navbar-toggler-icon {
     background-image: url(./download.png); 
@@ -74,9 +81,9 @@ ul {
 /*gvdea,*/
 
 .navbar-toggler {
-    position: fixed;
-    top: 20px;
-    right: 15px;
+    position: absolute;
+    top: 0px;
+    right: -12px;
     z-index: 9998;
     border: 0;
     background: none;
@@ -111,8 +118,15 @@ ul {
     box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0);
 }
 .show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0rem rgba(130,138,145,.5);
+    box-shadow: 0 0 0 0rem rgba(10, 124, 224, 0.5);
 }
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(26 23 23 / 50%);
+}
+.mcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
